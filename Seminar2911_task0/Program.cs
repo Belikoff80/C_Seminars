@@ -1,8 +1,7 @@
 ﻿string? num1Line = Console.ReadLine();
 string? num2Line = Console.ReadLine();
 
-if (num1Line != null && num1Line != null) ;
-
+if (num1Line != null && num2Line != null)
 {
     //Парсим введеное число. То есть переводим из сринга в интежер
     int num1 = int.Parse(num1Line);
