@@ -18,9 +18,9 @@ else
 
 
 //Вариант 2
-char[] digits = numberSintezator.Next(10, 100).ToString.ToArray;
-
-firstNumber = ((int)digits[0] - 48);
+char[] digits = numberSintezator.Next(10, 100).ToString.ToCharArray();
+Console.WriteLine(digits);
+firstNumber = ((int)digits[0] - 48);//данные из сводной таблицы ASCII (преобразовали из символа(из числа) в char) 48 по ASCII что то там такое, я ничего не понял, но это преобразование из digit в чар 
 secondNumber = ((int)digits[1] - 48);
 //использование тернарного оператора
 int resultNumber = firstNumber > secondNumber ? resultNumber = firstNumber : resultNumber = secondNumber;
