@@ -20,10 +20,10 @@ int[] GenArray(int num, int lowRange, int upRange)
     return arr;
 }
 
-void PrintResult(string res, int value)
-{
-    Console.WriteLine(res + value);
-}
+// void PrintResult(string res, int value)
+// {
+//     Console.WriteLine(res + value);
+// }
 
 void PrintArray(int[] arr)
 {

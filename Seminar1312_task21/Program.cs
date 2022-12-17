@@ -8,6 +8,9 @@ PrintArray(array);
 int result = CountElem(array, 10, 99);
 Console.WriteLine();
 
+
+PrintResult("Answer: " + result);
+
 int[] GenArray(int num, int lowRange, int upRange)
 {
     Random rnd = new Random();
