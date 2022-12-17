@@ -18,15 +18,17 @@ int ReadData(string msg)
 double Calculate_length(double x1, double x2, double y1, double y2)
 {
     double res = 0;
-    res = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
-    return res;
+    res = Math.Round(Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2)), 2);
+    return (res);
 }
 
 void PrintData(string msg, double res)
 {
     Console.WriteLine(msg + res);
 }
-PrintData(string msg, double res);
+
+
+PrintData("answer", Calculate_length(coordX1, coordX2, coordY1, coordY2));
 
 // int ReadData(string msg)
 // {

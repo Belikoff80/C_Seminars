@@ -5,13 +5,6 @@
 
 //на вход получаем число N и выдаем строку 
 
-int number = ReadData("Введите число: ");
-
-string outLine = LineBuilder(number, 1);
-PrintData("", outLine);
-
-outLine = LineBuilder(number, 2);
-PrintData("", outLine);
 
 
 // Метод вывода данных
@@ -45,9 +38,9 @@ int ReadData(string msg)
 
 int n = ReadData("Введите число: ");
 
-string line = LineBuilder(n);
+string line = LineBuilder(n, 2);
 
-Console.WriteLine(line);
+PrintData("Answer", line);
 
 
 
